@@ -1,121 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/59b1265ea4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
 
+    
 <body>
-    <div class="bg">
-        <div class="contianer">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="./assets/logo_coffe.svg" alt="">
+    <header>
+        <nav class="nav_container">
+            <div class="nav_laft">
+                <div class="logo">sneakers</div>
+                <ul class="nav-links">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="profile-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdmvTNzX2AmCX2rSRQBa4KkZsU2GgiWh8sA&s"
+                    alt="Profile" class="profile-img">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-gallery">
+                <img src="https://img.drz.lazcdn.com/static/bd/p/563df53262050b8e1fdb12d93c60ab81.jpg_720x720q80.jpg"
+                    alt="Sneaker" class="main-image">
+                <div class="thumbnail-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFLZWrVQoitYN8rry4hyUJjBmtsK-Uo2z1Q&s"
+                        class="thumbnail active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs029amcf-7TsvqoeEmj4QohVk5Isoomj2kg&s"
+                        class="thumbnail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYTWroGZ4eGWDIwlp96LeJXbEQ73Q8MmpkXOTDxw8A1Edf2RXDoBv8awxuB4WKPz0y_0&usqp=CAU"
+                        class="thumbnail">
+                    <img src="https://bd-1.edkncdn.net/img/800x800/stores/6319bca140641aa1ae1ee667/product-square/1700475198663-8qxmzdeNxjPlrZRHYSeBN/FLY%20WEAVE%20CASUAL%20SHOE%20(1).webp"
+                        class="thumbnail">
                 </div>
-                <div class="menus">
-                    <ul>
-                        <li class="primary">About Us</li>
-                        <li>Our Products</li>
-                        <li>Delivery</li>
-                    </ul>
+            </div>
+            <div class="product-details">
+                <h3>SNEAKER COMPANY</h3>
+                <h1>Fall Limited Edition <br /> Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                    sole, they'll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <span class="current-price">$125.00</span>
+                    <span class="discount">50%</span>
+                    <span class="original-price">$250.00</span>
                 </div>
-                <div class="nav_buttons">
-                    <div class="nav_input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" name="" id="">
+                <div class="cart-options">
+                    <div class="quantity-selector">
+                        <button class="minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="plus">+</button>
                     </div>
-                    <i class="cart fa-solid fa-cart-shopping"></i>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to cart</button>
                 </div>
-            </nav>
-            <section class="hero">
-                <div class="hero_left">
-                    <h1>Enjoy your <span class="primary">
-                            coffee </span><br> before your activity
-                    </h1>
-                    <p>
-                        Boost your productivity and build your <br> mood with a glass of coffee in the morning
-                    </p>
-                    <div class="hero_buttons">
-                        <div class="order_now">
-                            <p>Order Now</p> <i class="order fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <div class="more_menu">
-                            <p>More Menu</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero_image">
-                    <!-- <div class="hero_image">
-                        <img src="./assets/coffe.png" alt="">
-                    </div> -->
-                    <img src="./assets/img-hero.png" alt="">
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="popular_container">
-        <div class="contianer">
-            <h1 class="popular">Popular Now</h1>
-            <div class="cart_wrapper">
-                <div class="product_cart">
-                    <div class="cart_image">
-                        <img src="./assets/coffee1.jpg" alt="">
-                    </div>
-                    <div class="cart_details">
-                        <div>
-                            <h3>Vanilla Latte</h3>
-                            <span class="hot">Hot </span>
-                            <span class="cold">Cold</span>
-                        </div>
-                        <div>
-                            <h3>2K</h3>
-                            <i class="order details_cart fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product_cart">
-                    <div class="cart_image">
-                        <img src="./assets/coffee1.jpg" alt="">
-                    </div>
-                    <div class="cart_details">
-                        <div>
-                            <h3>Expresso</h3>
-                            <span class="hot">Hot </span>
-                            <span class="cold">Cold</span>
-                        </div>
-                        <div>
-                            <h3>2K</h3>
-                            <i class="order details_cart fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product_cart">
-                    <div class="cart_image">
-                        <img src="./assets/coffee1.jpg" alt="">
-                    </div>
-                    <div class="cart_details">
-                        <div>
-                            <h3>Hazilnat Latty</h3>
-                            <span class="hot">Hot </span>
-                            <span class="cold">Cold</span>
-                        </div>
-                        <div>
-                            <h3>2K</h3>
-                            <i class="order details_cart fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </div>
-
+    </main>
 </body>
 
 </html>
